@@ -3,11 +3,9 @@
 ### Project's goal:
 > The purpose of the project is to create a clone of the UBER application.
 
-### Tools used:
-* React Native
-    - [ ] React Native Elements
-    - [ ] React Native Maps
+### Tricks that will be used to build the project with ReactNative:
+    - [ x ] Redux
+    - [ x ] TailwindCSS
+    - [ x ] React Native Elements
     - [ ] React Navigation
-* React
-    - [ ] TailwindCSS
-    - [ ] Redux
+    - [ ] React Native Maps
