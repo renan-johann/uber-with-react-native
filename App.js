@@ -9,7 +9,6 @@ import HomeScreen from './screens/HomeScreen';
 import MapScreen from './screens/MapScreen';
 import { store } from './store';
 
-
 export default function App() {
 
   const Stack = createStackNavigator();

@@ -7,5 +7,5 @@
     - [ x ] Redux
     - [ x ] TailwindCSS
     - [ x ] React Native Elements
-    - [ ] React Navigation
-    - [ ] React Native Maps
+    - [ x ] React Navigation
+    - [ x ] React Native Maps
