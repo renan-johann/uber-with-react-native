@@ -3,6 +3,8 @@ import React from 'react'
 import Map from '../components/Map'
 import MapView from 'react-native-maps'
 import tw from 'twrnc';
+import NavigateCard from '../components/NavigateCard';
+import RideOptionsCard from '../components/RideOptionsCard';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const MapScreen = () => {
@@ -16,14 +18,28 @@ const MapScreen = () => {
         <Map />
       </View>
       
-      <View style={tw`h-1/2`}></View>
-      <Stack.Navigator>
-      
-      </Stack.Navigator>
-    </View>
+        <View style={tw`h-1/2`}>
+          <Stack.Navigator>
+            <Stack.Screen
+              name='NavigateCard'
+              component={NavigateCard}
+              options={{
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen
+              name='RideOptionsCard'
+              component={RideOptionsCard}
+              options={{
+                headerShown: false,
+              }}
+            />
+          </Stack.Navigator>
+        </View>
+      </View>
   )
 }
 
-export default MapScreen
+export default MapScreen;
 
 const styles = StyleSheet.create({})

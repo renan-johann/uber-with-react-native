@@ -24,9 +24,9 @@ const data = [
 const NavOptions = () => {
 
     const navigation = useNavigation();
-    const origin = useSelector(selectOrigin)
+    const origin = useSelector(selectOrigin);
 
-    return (
+    return(
         <FlatList
         data={ data }
         horizontal
@@ -39,7 +39,7 @@ const NavOptions = () => {
             >
 
                 <View style={tw`${!origin && 'opacity-20'}`}>
-                    <Image 
+                    <Image
                         style={{width: 120, height: 120, 
                         resizeMode: 'contain'}}
                         source={{uri: item.image}}
@@ -58,4 +58,4 @@ const NavOptions = () => {
     );
 };
 
-export default NavOptions
+export default NavOptions;

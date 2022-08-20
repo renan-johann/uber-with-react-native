@@ -6,7 +6,7 @@ const initialState = {
     travelTimeInformation: null,
 }
 
-export const  navSlice = createSlice({
+export const navSlice = createSlice({
     name: 'nav',
     initialState,
     reducers: {
