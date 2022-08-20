@@ -45,7 +45,7 @@ const HomeScreen = () => {
                 fetchDetails={true}
                 returnKeyType={'search'}
                 enablePoweredByContainer={false}
-                minLength={2}
+                minLength={3}
                 query={{
                     key: GOOGLE_MAPS_APIKEY,
                     language: 'en'
