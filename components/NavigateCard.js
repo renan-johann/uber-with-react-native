@@ -6,6 +6,7 @@ import { GOOGLE_MAPS_APIKEY } from '@env'
 import { useDispatch } from 'react-redux';
 import { setDestination, setOrigin } from '../slices/navSlice';
 import { useNavigation } from '@react-navigation/native';
+import NavFavourites from './NavFavourites';
 
 const NavigateCard = () => {
 
@@ -23,7 +24,6 @@ const NavigateCard = () => {
             fetchDetails= {true}
             returnKeyType={'search'}
             minLength={3}
-            enablePoweredByContainer={false}
             onPress={(data, details = null) =>{
               dispatch(
                 setDestination({
@@ -33,8 +33,8 @@ const NavigateCard = () => {
               );
               
               navegation.navigate('RideOptionsCard')
-
             }}
+            enablePoweredByContainer={false}
             query={{
               key: GOOGLE_MAPS_APIKEY,
               language: 'en'
@@ -43,6 +43,7 @@ const NavigateCard = () => {
             debounce={400}
           />
         </View>
+        <NavFavourites />
       </View>
     </SafeAreaView>
   )
